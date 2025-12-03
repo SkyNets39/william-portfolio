@@ -1,0 +1,25 @@
+import { Card, CardContent, Typography } from "@mui/material";
+
+export default function ExpertiseCard({ expertise }) {
+  const { title, description } = expertise;
+  return (
+    <Card
+      sx={{
+        p: 1,
+        borderRadius: 3,
+        border: "1px solid",
+        borderColor: "grey.700",
+        height: "100%",
+      }}
+    >
+      <CardContent>
+        <Typography variant="h4" sx={{ mb: 2 }}>
+          {title}
+        </Typography>
+        <Typography variant="body1" color="text.secondary">
+          {description}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
