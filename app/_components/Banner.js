@@ -79,10 +79,24 @@ export default function Banner() {
           sx={{
             fontSize: "8rem",
             fontWeight: 600,
+
+            // GRADIENT ANIMATION
             background:
-              "linear-gradient(90deg,rgba(252, 252, 252, 1) 0%, rgba(0, 0, 255, 1) 100%)",
+              "linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(0,0,255,1) 100%)",
+            backgroundSize: "300% 100%",
+            animation: "textGradient 15s ease-in-out infinite",
+
+            // TEXT CLIP
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+
+            // KEYFRAMES
+            "@keyframes textGradient": {
+              "0%": { backgroundPosition: "0% 50%" },
+              "50%": { backgroundPosition: "100% 50%" },
+              "100%": { backgroundPosition: "0% 50%" },
+            },
           }}
         >
           Hello

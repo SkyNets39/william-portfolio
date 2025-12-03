@@ -13,7 +13,7 @@ export default function ContactInfo() {
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
         <ContactRow
           fieldName="Email Address"
-          value="williamwinata39@gmail.com"
+          value="williamwinata37@gmail.com"
         />
         <ContactRow
           fieldName="Phone"
