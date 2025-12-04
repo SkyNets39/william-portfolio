@@ -22,10 +22,11 @@ const libraries = [
   { id: 5, name: "Redux" },
   { id: 6, name: "Redux Toolkit" },
   { id: 7, name: "Rechart" },
-  { id: 8, name: "Next Auth" },
-  { id: 9, name: "Selenium" },
-  { id: 10, name: "Scrapy" },
-  { id: 11, name: "Tkinter" },
+  { id: 8, name: "Tanstack Query" },
+  { id: 9, name: "Next Auth" },
+  { id: 10, name: "Selenium" },
+  { id: 11, name: "Scrapy" },
+  { id: 12, name: "Tkinter" },
 ];
 
 const databases = [
