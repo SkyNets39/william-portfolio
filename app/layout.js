@@ -6,7 +6,7 @@ import Navbar from "./_components/Navbar";
 import DesktopProfile from "./_components/DesktopProfile";
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "William's Portfolio",
   description: "William's Personal Portfolio",
 };
 

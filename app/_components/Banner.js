@@ -10,7 +10,7 @@ export default function Banner() {
       sx={{
         position: "relative",
         overflow: "hidden",
-        minHeight: "100vh",
+        minHeight: "80vh",
         display: "flex",
         flexDirection: "column",
         textAlign: "center",
