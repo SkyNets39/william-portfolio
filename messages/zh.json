@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "首页",
+    "expertise": "专业技能",
+    "projects": "项目",
+    "education": "教育",
+    "experience": "工作经历"
+  },
+  "banner": {
+    "welcome": "欢迎来到我的作品集",
+    "hello": "你好",
+    "subtitle": "~我是William，全栈开发者"
+  },
+  "profile": {
+    "name": "William",
+    "title": "全栈开发者 | Next JS",
+    "address": {
+      "residence": "居住地",
+      "nationality": "国籍",
+      "city": "城市",
+      "age": "年龄",
+      "residenceValue": "门腾",
+      "nationalityValue": "印度尼西亚",
+      "cityValue": "雅加达",
+      "ageValue": "24"
+    },
+    "languages": {
+      "title": "语言",
+      "indonesian": "印度尼西亚语",
+      "english": "英语",
+      "chinese": "中文"
+    },
+    "techStacks": {
+      "title": "技术栈和工具",
+      "codingLanguages": "编程语言",
+      "frameworks": "框架",
+      "libraries": "库",
+      "databases": "数据库",
+      "tools": "工具"
+    },
+    "contact": {
+      "emailAddress": "电子邮箱",
+      "phone": "电话",
+      "emailValue": "williamwinata37@gmail.com",
+      "phoneValue": "+62 85183092845\\n+86 13381824310"
+    },
+    "resume": {
+      "title": "下载简历",
+      "englishVersion": "英文版本",
+      "chineseVersion": "中文版本"
+    }
+  },
+  "sections": {
+    "expertise": {
+      "title": "专业技能"
+    },
+    "projects": {
+      "title": "我的项目"
+    },
+    "education": {
+      "title": "教育",
+      "university": "上海大学",
+      "major": "计算机科学与工程",
+      "period": "2020年9月 - 2024年6月"
+    },
+    "experience": {
+      "title": "工作经历",
+      "company": "Hand Solution Indonesia",
+      "position": "SAP FICO顾问",
+      "website": "www.hand-global.com",
+      "description": "- 我为大型制造和贸易客户的SAP ECC 6.0 FI–CO提供生产支持，确保在关键财务期间系统可用性达到99%以上。我领导设计、开发和用户验收测试了一个自定义Z程序，用于自动化重复日记账分录和公司间对账，每月节省超过20小时的月末结算时间。\n\n- 我管理月末和年末结算活动——包括余额结转、外汇重估、折旧运行和成本结算——准确率达到100%。我还通过改进自动科目确定、验证/替换逻辑和自定义报告来增强FI–MM/SD集成，将流程效率提高25%。\n\n- 此外，我通过准确的财务数据和文档支持内部和外部审计，并使用ABAP运行时分析和SQL跟踪解决复杂的FI/CO问题，始终满足SLA要求。",
+      "period": "2020年9月 - 至今"
+    }
+  },
+  "data": {
+    "expertises": [
+      {
+        "title": "全栈工程师",
+        "description": "在使用React、Next.js、TypeScript和Node.js进行全栈开发方面经验丰富。擅长构建可扩展的前端界面、处理API集成，以及使用MongoDB、PostgreSQL、MySQL、Supabase、Firebase和Neon等数据库。"
+      },
+      {
+        "title": "设计转换",
+        "description": "能够使用TailwindCSS、Material UI和SCSS将Figma设计转换为干净、响应式且高质量的Web界面。确保在移动设备、平板电脑和桌面设备上保持一致的视觉效果。"
+      },
+      {
+        "title": "版本控制",
+        "description": "精通Git和GitHub，包括分支、拉取请求、代码审查和协作工作流。致力于维护干净且可追踪的提交历史。"
+      },
+      {
+        "title": "问题解决",
+        "description": "具有强大的分析和逻辑思维能力，在使用JavaScript、TypeScript和Python解决复杂技术问题方面经验丰富。专注于高效、可靠和可扩展的解决方案。"
+      },
+      {
+        "title": "任务和时间管理",
+        "description": "能够独立工作或在团队中工作，具有清晰的优先级、一致的交付和有效的沟通。适应敏捷和快节奏的工作环境。"
+      },
+      {
+        "title": "网络爬虫和自动化",
+        "description": "在使用Selenium和Scrapy进行大规模网络爬虫、数据提取和自动化方面有实践经验。熟悉处理动态内容、结构化数据以及将结果集成到API或数据库中。"
+      }
+    ],
+    "projects": [
+      {
+        "title": "The Time Palace",
+        "description": "具有SSR目录、动态过滤器和完整管理仪表板的全栈电子商务平台，包含分析和基于角色的访问控制。"
+      },
+      {
+        "title": "The Pelataran Website",
+        "description": "具有完整预订流程、可用性检查、身份验证和响应式UI的小屋预订系统。"
+      },
+      {
+        "title": "The Pelataran Admin Dashboard",
+        "description": "具有实时数据、可编辑表格、过滤、排序和分页功能的SPA管理仪表板，由React Query提供支持。"
+      },
+      {
+        "title": "Jobstreet Scraper",
+        "description": "具有反封禁行为、GUI控件、多线程工作器和CSV导出功能的自动化Jobstreet爬虫。"
+      }
+    ]
+  },
+  "common": {
+    "visit": "访问",
+    "github": "Github"
+  }
+}

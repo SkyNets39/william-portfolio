@@ -1,6 +1,11 @@
+"use client";
+
 import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 export default function ContactInfo() {
+  const t = useTranslations("profile.contact");
+
   return (
     <Box
       sx={{
@@ -12,11 +17,12 @@ export default function ContactInfo() {
     >
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
         <ContactRow
-          fieldName="Email Address"
+          fieldName={t("emailAddress")}
           value="williamwinata37@gmail.com"
         />
+
         <ContactRow
-          fieldName="Phone"
+          fieldName={t("phone")}
           value={
             <>
               +62 85183092845 <br />

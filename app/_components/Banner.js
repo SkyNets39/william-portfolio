@@ -2,8 +2,11 @@
 
 import { Box, Chip, Typography } from "@mui/material";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 export default function Banner() {
+  const t = useTranslations("banner");
+
   return (
     <Box
       id="home-section"
@@ -36,14 +39,11 @@ export default function Banner() {
           top: "25%",
           left: "32%",
           transform: "translate(-50%, -50%)",
-
           width: "450px",
           height: "450px",
           borderRadius: "50%",
-
           background:
             "radial-gradient(circle at center, rgba(120,80,255,0.45), rgba(0,0,0,0) 70%)",
-
           filter: "blur(80px)",
           zIndex: 1,
           pointerEvents: "none",
@@ -55,7 +55,7 @@ export default function Banner() {
       ===================================================== */}
       <Box sx={{ position: "relative", zIndex: 10 }}>
         <Chip
-          label="Welcome to my portfolio"
+          label={t("welcome")}
           sx={{
             px: 2,
             mb: 1,
@@ -63,7 +63,6 @@ export default function Banner() {
             fontWeight: 600,
             background:
               "linear-gradient(90deg,rgba(131, 58, 180, 1), rgba(253, 29, 29, 1), rgba(252, 176, 69, 1))",
-
             backgroundSize: "300% 100%",
             animation: "gradientMove 15s ease infinite",
 
@@ -74,24 +73,20 @@ export default function Banner() {
             },
           }}
         />
+
         <Typography
           variant="h1"
           sx={{
             fontSize: "8rem",
             fontWeight: 600,
-
-            // GRADIENT ANIMATION
             background:
               "linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(0,0,255,1) 100%)",
             backgroundSize: "300% 100%",
             animation: "textGradient 15s ease-in-out infinite",
-
-            // TEXT CLIP
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
 
-            // KEYFRAMES
             "@keyframes textGradient": {
               "0%": { backgroundPosition: "0% 50%" },
               "50%": { backgroundPosition: "100% 50%" },
@@ -99,7 +94,7 @@ export default function Banner() {
             },
           }}
         >
-          Hello
+          {t("hello")}
         </Typography>
 
         <Typography
@@ -109,24 +104,9 @@ export default function Banner() {
             marginTop: "1rem",
           }}
         >
-          ~It&apos;s William, the Full-stack Developer
+          {t("subtitle")}
         </Typography>
       </Box>
     </Box>
   );
-}
-
-/* ==========================================
-   STAR STYLE HELPER
-========================================== */
-function starStyle(top, left, size) {
-  return {
-    position: "absolute",
-    top,
-    left,
-    width: `${size}px`,
-    height: `${size}px`,
-    background: "white",
-    borderRadius: "50%",
-  };
 }

@@ -1,7 +1,11 @@
+"use client";
+
 import { Card, CardContent, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 export default function ExpertiseCard({ expertise }) {
-  const { title, description } = expertise;
+  const t = useTranslations();
+
   return (
     <Card
       sx={{
@@ -14,10 +18,11 @@ export default function ExpertiseCard({ expertise }) {
     >
       <CardContent>
         <Typography variant="h4" sx={{ mb: 2 }}>
-          {title}
+          {t(expertise.title)}
         </Typography>
+
         <Typography variant="body1" color="text.secondary">
-          {description}
+          {t(expertise.description)}
         </Typography>
       </CardContent>
     </Card>

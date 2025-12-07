@@ -1,14 +1,19 @@
+"use client";
+
 import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 export default function Address() {
+  const t = useTranslations("profile.address");
+
   return (
     <Box
       sx={{ display: "flex", flexDirection: "column", gap: 0.8, p: 2, my: 2 }}
     >
-      <AddressRow fieldName="Residence" value="Menteng" />
-      <AddressRow fieldName="Nationality" value="Indonesian" />
-      <AddressRow fieldName="City" value="Jakarta" />
-      <AddressRow fieldName="Age" value="24" />
+      <AddressRow fieldName={t("residence")} value={t("residenceValue")} />
+      <AddressRow fieldName={t("nationality")} value={t("nationalityValue")} />
+      <AddressRow fieldName={t("city")} value={t("cityValue")} />
+      <AddressRow fieldName={t("age")} value={t("ageValue")} />
     </Box>
   );
 }

@@ -1,5 +1,6 @@
 //MenuSidebar.js
 import { Box, Button, Drawer } from "@mui/material";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MenuSidebar({ open, onClose, links, onLinkClick }) {
   return (
@@ -11,6 +12,7 @@ export default function MenuSidebar({ open, onClose, links, onLinkClick }) {
         paper: {
           sx: {
             width: "45vw",
+            p: 2,
             bgcolor: "background.default",
             color: "text.primary",
             overflowY: "auto",
@@ -20,11 +22,12 @@ export default function MenuSidebar({ open, onClose, links, onLinkClick }) {
     >
       <Box
         sx={{
+          height: "100vh",
           display: "flex",
           flexDirection: "column",
           gap: 2,
-          p: 2,
-          my: "auto",
+
+          justifyContent: "center",
         }}
       >
         {links.map((link) => {
@@ -50,6 +53,8 @@ export default function MenuSidebar({ open, onClose, links, onLinkClick }) {
           );
         })}
       </Box>
+
+      <LanguageSwitcher props={{ m: "auto", width: "100%" }} />
     </Drawer>
   );
 }

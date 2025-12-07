@@ -1,7 +1,12 @@
+"use client";
+
 import { Avatar, Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 export default function ProfileCard() {
+  const t = useTranslations("profile");
   const avatarSize = 100;
+
   return (
     <Box
       sx={{
@@ -35,13 +40,15 @@ export default function ProfileCard() {
           sx={{ width: avatarSize, height: avatarSize }}
         />
       </Box>
-      <Typography variant="h4">William</Typography>
+
+      <Typography variant="h4">{t("name")}</Typography>
+
       <Typography
         variant="body2"
         color="text.secondary"
         sx={{ textAlign: "center" }}
       >
-        Full-stack Developer | Next JS
+        {t("title")}
       </Typography>
     </Box>
   );

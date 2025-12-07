@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Box,
   Button,
@@ -10,21 +11,22 @@ import {
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function ProjectCard({ project }) {
-  const { id, img, title, techStacks, description, url, github } = project;
+  const t = useTranslations();
+
+  const { img, title, techStacks, description, url, github } = project;
+
   return (
     <Card sx={{ width: 350, height: "100%" }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height={200}
-        image={img}
-      ></CardMedia>
+      <CardMedia component="img" alt={t(title)} height={200} image={img} />
+
       <CardContent sx={{ p: 3 }}>
         <Typography variant="h2" sx={{ mb: 1 }}>
-          {title}
+          {t(title)}
         </Typography>
+
         <Box sx={{ display: "flex", gap: 1, mb: 2, flexWrap: "wrap" }}>
           {techStacks.map((tech) => (
             <Chip
@@ -35,9 +37,11 @@ export default function ProjectCard({ project }) {
             />
           ))}
         </Box>
+
         <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-          {description}
+          {t(description)}
         </Typography>
+
         <Box sx={{ display: "flex", gap: 2 }}>
           {url && (
             <Button
@@ -48,9 +52,10 @@ export default function ProjectCard({ project }) {
               target="_blank"
               sx={{ minWidth: 100 }}
             >
-              Visit
+              {t("common.visit")}
             </Button>
           )}
+
           <Button
             startIcon={<GitHubIcon />}
             component={Link}
@@ -60,7 +65,7 @@ export default function ProjectCard({ project }) {
             target="_blank"
             sx={{ minWidth: 100 }}
           >
-            Github
+            {t("common.github")}
           </Button>
         </Box>
       </CardContent>

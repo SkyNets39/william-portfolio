@@ -1,13 +1,13 @@
 "use client";
 
 import { Drawer, Box, Divider } from "@mui/material";
-import ProfileCard from "../_components/profile/ProfileCard";
-import Address from "../_components/profile/Address";
-import Languages from "../_components/profile/Languages";
-import TechStacks from "../_components/profile/TechStacks";
-import ContactInfo from "../_components/profile/ContactInfo";
-import Resume from "../_components/profile/Resume";
-import ProfileFooter from "../_components/profile/ProfileFooter";
+import ProfileCard from "./profile/ProfileCard";
+import Address from "./profile/Address";
+import Languages from "./profile/Languages";
+import TechStacks from "./profile/TechStacks";
+import ContactInfo from "./profile/ContactInfo";
+import Resume from "./profile/Resume";
+import ProfileFooter from "./profile/ProfileFooter";
 
 export default function ProfileSidebar({ open, onClose }) {
   return (

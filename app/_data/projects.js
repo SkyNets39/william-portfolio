@@ -2,40 +2,36 @@ const projects = [
   {
     id: 1,
     img: "/project/the-time-palace.png",
-    title: "The Time Palace",
+    title: "data.projects.0.title",
     techStacks: ["Next.js", "Supabase", "MUI"],
-    description:
-      "Full-stack e-commerce platform with SSR catalog, dynamic filters, and a full admin dashboard with analytics and role-based access.",
+    description: "data.projects.0.description",
     url: "https://the-time-palace.vercel.app/",
     github: "https://github.com/SkyNets39/the-time-palace",
   },
   {
     id: 2,
     img: "/project/pelataran-website.png",
-    title: "The Pelataran Website",
+    title: "data.projects.1.title",
     techStacks: ["Next.js", "Typescript", "Supabase"],
-    description:
-      "Cabin booking system with full reservation flow, availability checking, authentication, and responsive UI.",
+    description: "data.projects.1.description",
     url: "https://the-pelataran-website.vercel.app",
     github: "https://github.com/SkyNets39/the-pelataran-website",
   },
   {
     id: 3,
     img: "/project/pelataran-admin.png",
-    title: "The Pelataran Admin Dashboard",
+    title: "data.projects.2.title",
     techStacks: ["Vite", "React Query", "Styled Components"],
-    description:
-      "SPA admin dashboard with real-time data, editable tables, filtering, sorting, and pagination powered by React Query.",
+    description: "data.projects.2.description",
     url: "https://the-pelataran-dashboard.vercel.app",
     github: "https://github.com/SkyNets39/the-pelataran-dashboard",
   },
   {
     id: 4,
     img: "/project/jobstreet-scraper.png",
-    title: "Jobstreet Scraper",
+    title: "data.projects.3.title",
     techStacks: ["Python", "Selenium", "Undetected-Chromedriver"],
-    description:
-      "Automated Jobstreet scraper with anti-ban behavior, GUI controls, multithreaded worker, and CSV export.",
+    description: "data.projects.3.description",
     url: null,
     github: "https://github.com/SkyNets39/jobstreet-scraper",
   },

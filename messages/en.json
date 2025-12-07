@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Home",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "education": "Education",
+    "experience": "Experience"
+  },
+  "banner": {
+    "welcome": "Welcome to my portfolio",
+    "hello": "Hello",
+    "subtitle": "~It's William, the Full-stack Developer"
+  },
+  "profile": {
+    "name": "William",
+    "title": "Full-stack Developer | Next JS",
+    "address": {
+      "residence": "Residence",
+      "nationality": "Nationality",
+      "city": "City",
+      "age": "Age",
+      "residenceValue": "Menteng",
+      "nationalityValue": "Indonesian",
+      "cityValue": "Jakarta",
+      "ageValue": "24"
+    },
+    "languages": {
+      "title": "Languages",
+      "indonesian": "Indonesian",
+      "english": "English",
+      "chinese": "Chinese"
+    },
+    "techStacks": {
+      "title": "Tech Stacks and Tools",
+      "codingLanguages": "Coding Languages",
+      "frameworks": "Frameworks",
+      "libraries": "Libraries",
+      "databases": "Databases",
+      "tools": "Tools"
+    },
+    "contact": {
+      "emailAddress": "Email Address",
+      "phone": "Phone",
+      "emailValue": "williamwinata37@gmail.com",
+      "phoneValue": "+62 85183092845\\n+86 13381824310"
+    },
+    "resume": {
+      "title": "Download Resume",
+      "englishVersion": "English Version",
+      "chineseVersion": "Chinese Version"
+    }
+  },
+  "sections": {
+    "expertise": {
+      "title": "Expertise"
+    },
+    "projects": {
+      "title": "My Projects"
+    },
+    "education": {
+      "title": "Education",
+      "university": "Shanghai University",
+      "major": "Computer Science and Engineering",
+      "period": "September 2020 - June 2024"
+    },
+    "experience": {
+      "title": "Experience",
+      "company": "Hand Solution Indonesia",
+      "position": "SAP FICO Consultant",
+      "website": "www.hand-global.com",
+      "description": "- I provide production support for SAP ECC 6.0 FI–CO across large manufacturing and trading clients, ensuring 99%+ system availability during critical financial periods. I led the design, development, and UAT of a custom Z-program to automate recurring journal entries and intercompany reconciliations, saving over 20 hours per month-end close.\n\n- I manage month-end and year-end closing activities—including balance carry-forward, FX revaluation, depreciation runs, and cost settlements—with 100% accuracy. I also enhance FI–MM/SD integration by improving automatic account determination, validation/substitution logic, and custom reporting, increasing process efficiency by 25%.\n\n- Additionally, I support internal and external audits with accurate financial data and documentation, and resolve complex FI/CO issues using ABAP runtime analysis and SQL trace, consistently meeting SLA requirements.",
+      "period": "September 2020 - Present"
+    }
+  },
+  "data": {
+    "expertises": [
+      {
+        "title": "Full-stack Engineer",
+        "description": "Experienced in full-stack development using React, Next.js, TypeScript, and Node.js. Skilled in building scalable front-end interfaces, handling API integrations, and working with databases like MongoDB, PostgreSQL, MySQL, Supabase, Firebase, and Neon."
+      },
+      {
+        "title": "Design Conversion",
+        "description": "Capable of converting Figma designs into clean, responsive, and high-quality web interfaces using TailwindCSS, Material UI, and SCSS. Ensures consistent visuals across mobile, tablet, and desktop."
+      },
+      {
+        "title": "Version Control",
+        "description": "Proficient with Git and GitHub, including branching, pull requests, code reviews, and collaborative workflows. Committed to maintaining clean and trackable commit history."
+      },
+      {
+        "title": "Problem Solving",
+        "description": "Strong analytical and logical thinking with experience solving complex technical problems using JavaScript, TypeScript, and Python. Focused on efficient, reliable, and scalable solutions."
+      },
+      {
+        "title": "Task & Time Management",
+        "description": "Able to work independently or in teams with clear prioritization, consistent delivery, and effective communication. Comfortable working in agile and fast-paced environments."
+      },
+      {
+        "title": "Web Scraping & Automation",
+        "description": "Hands-on experience with Selenium and Scrapy for large-scale web scraping, data extraction, and automation. Familiar with handling dynamic content, structuring data, and integrating results into APIs or databases."
+      }
+    ],
+    "projects": [
+      {
+        "title": "The Time Palace",
+        "description": "Full-stack e-commerce platform with SSR catalog, dynamic filters, and a full admin dashboard with analytics and role-based access."
+      },
+      {
+        "title": "The Pelataran Website",
+        "description": "Cabin booking system with full reservation flow, availability checking, authentication, and responsive UI."
+      },
+      {
+        "title": "The Pelataran Admin Dashboard",
+        "description": "SPA admin dashboard with real-time data, editable tables, filtering, sorting, and pagination powered by React Query."
+      },
+      {
+        "title": "Jobstreet Scraper",
+        "description": "Automated Jobstreet scraper with anti-ban behavior, GUI controls, multithreaded worker, and CSV export."
+      }
+    ]
+  },
+  "common": {
+    "visit": "Visit",
+    "github": "Github"
+  }
+}

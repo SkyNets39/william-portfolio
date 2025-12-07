@@ -24,9 +24,10 @@ const libraries = [
   { id: 7, name: "Rechart" },
   { id: 8, name: "Tanstack Query" },
   { id: 9, name: "Next Auth" },
-  { id: 10, name: "Selenium" },
-  { id: 11, name: "Scrapy" },
-  { id: 12, name: "Tkinter" },
+  { id: 10, name: "Next-Intl (i18n)" },
+  { id: 11, name: "Selenium" },
+  { id: 12, name: "Scrapy" },
+  { id: 13, name: "Tkinter" },
 ];
 
 const databases = [

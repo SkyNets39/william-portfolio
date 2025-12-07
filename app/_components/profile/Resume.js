@@ -3,9 +3,10 @@
 import { useState } from "react";
 import { Box, IconButton, Typography, Menu, MenuItem } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Resume() {
+  const t = useTranslations("profile.resume");
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -26,7 +27,7 @@ export default function Resume() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h6">Download Resume</Typography>
+      <Typography variant="h6">{t("title")}</Typography>
 
       {/* Button trigger */}
       <IconButton
@@ -45,7 +46,7 @@ export default function Resume() {
           download
           onClick={handleClose}
         >
-          English Version
+          {t("englishVersion")}
         </MenuItem>
 
         <MenuItem
@@ -54,7 +55,7 @@ export default function Resume() {
           download
           onClick={handleClose}
         >
-          Chinese Version
+          {t("chineseVersion")}
         </MenuItem>
       </Menu>
     </Box>

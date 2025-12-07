@@ -1,31 +1,45 @@
 "use client";
+
 import { AppBar, Button, IconButton } from "@mui/material";
 import { Box } from "@mui/system";
+import ProfileSidebar from "./ProfileSidebar";
+import MenuSidebar from "./MenuSidebar";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import MenuIcon from "@mui/icons-material/Menu";
-import ProfileSidebar from "../_components/ProfileSidebar";
 import { useState } from "react";
-import MenuSidebar from "../_components/MenuSidebar";
 import HomeIcon from "@mui/icons-material/Home";
 import StarIcon from "@mui/icons-material/Star";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import useScrollToSection from "../_hooks/useScrollToSection";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const links = [
-  { label: "Home", target: "home-section", icon: <HomeIcon /> },
-  {
-    label: "Expertise",
-    target: "expertise-section",
-    icon: <PermContactCalendarIcon />,
-  },
-  { label: "Projects", target: "projects-section", icon: <StarIcon /> },
-  { label: "Education", target: "education-section", icon: <SchoolIcon /> },
-  { label: "Experience", target: "experience-section", icon: <WorkIcon /> },
-];
-
+// Links will be translated AFTER t() exists
 export default function Navbar() {
+  const t = useTranslations("nav");
+
+  const links = [
+    { label: t("home"), target: "home-section", icon: <HomeIcon /> },
+    {
+      label: t("expertise"),
+      target: "expertise-section",
+      icon: <PermContactCalendarIcon />,
+    },
+    { label: t("projects"), target: "projects-section", icon: <StarIcon /> },
+    {
+      label: t("education"),
+      target: "education-section",
+      icon: <SchoolIcon />,
+    },
+    {
+      label: t("experience"),
+      target: "experience-section",
+      icon: <WorkIcon />,
+    },
+  ];
+
   const [openProfile, setOpenProfile] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const scrollToSection = useScrollToSection();
@@ -77,16 +91,18 @@ export default function Navbar() {
         <Box
           sx={{
             display: { xs: "none", md: "flex" },
-            justifyContent: "flex-end",
-            gap: 2,
-            pr: 3,
+            alignItems: "center",
             py: 2,
+            px: 3,
             bgcolor: "grey.900",
           }}
         >
-          {links.map((link) => {
-            const { label, target } = link;
-            return (
+          {/* LEFT SPACER */}
+          <Box sx={{ flex: 1 }} />
+
+          {/* CENTER LINKS */}
+          <Box sx={{ display: "flex", gap: 2 }}>
+            {links.map(({ label, target }) => (
               <Button
                 disableRipple
                 key={label}
@@ -95,12 +111,18 @@ export default function Navbar() {
               >
                 {label}
               </Button>
-            );
-          })}
+            ))}
+          </Box>
+
+          {/* RIGHT LANGUAGE BUTTON */}
+          <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+            <LanguageSwitcher />
+          </Box>
         </Box>
       </AppBar>
 
       <ProfileSidebar open={openProfile} onClose={handleCloseProfile} />
+
       <MenuSidebar
         open={openMenu}
         onClose={handleCloseMenu}

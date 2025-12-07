@@ -4,18 +4,26 @@ import { Box, Typography, Grid, CircularProgress } from "@mui/material";
 import { useState, useEffect } from "react";
 import { useMotionValue, animate } from "motion/react";
 import languages from "../../_data/languages";
+import { useTranslations } from "next-intl";
 
 export default function Languages() {
+  const t = useTranslations(); // global t untuk seluruh key
+
   return (
     <Box sx={{ p: 2 }}>
       <Typography variant="h6" sx={{ mb: 2 }}>
-        Languages
+        {t("profile.languages.title")}
       </Typography>
+
       <Box sx={{ px: 2 }}>
         <Grid container spacing={2}>
           {languages.map((lang) => (
             <Grid item xs={6} key={lang.id}>
-              <LanguageCircle language={lang.language} level={lang.level} />
+              <LanguageCircle
+                language={lang.language}
+                level={lang.level}
+                t={t}
+              />
             </Grid>
           ))}
         </Grid>
@@ -25,11 +33,10 @@ export default function Languages() {
 }
 
 /* Component kecil untuk satu circle */
-function LanguageCircle({ language, level }) {
+function LanguageCircle({ language, level, t }) {
   const progress = useMotionValue(0);
   const [displayValue, setDisplayValue] = useState(0);
 
-  // Animasi berjalan sekali saat component mount → tetap perlu useEffect, bukan untuk data berubah
   useEffect(() => {
     const unsubscribe = progress.on("change", (v) => {
       setDisplayValue(Math.floor(v));
@@ -70,8 +77,10 @@ function LanguageCircle({ language, level }) {
           <Typography variant="body1">{displayValue}%</Typography>
         </Box>
       </Box>
+
+      {/* 🔥 Translation key applied here */}
       <Typography variant="body2" sx={{ mt: 1 }}>
-        {language}
+        {t(language)}
       </Typography>
     </Box>
   );
