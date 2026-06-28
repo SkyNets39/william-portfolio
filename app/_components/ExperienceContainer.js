@@ -1,11 +1,12 @@
 "use client";
 
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
 import { useTranslations } from "next-intl";
 
 export default function ExperienceContainer() {
   const t = useTranslations("sections.experience");
+  const items = t.raw("items");
 
   return (
     <Box id="experience-section" sx={{ px: 2 }}>
@@ -13,7 +14,11 @@ export default function ExperienceContainer() {
         {t("title")}
       </Typography>
 
-      <ExperienceCard />
+      <Stack spacing={2}>
+        {items.map((item, index) => (
+          <ExperienceCard key={index} experience={item} />
+        ))}
+      </Stack>
     </Box>
   );
 }

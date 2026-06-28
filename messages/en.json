@@ -65,11 +65,24 @@
     },
     "experience": {
       "title": "Experience",
-      "company": "Hand Solution Indonesia",
-      "position": "SAP FICO Consultant",
-      "website": "www.hand-global.com",
-      "description": "- I provide production support for SAP ECC 6.0 FI–CO across large manufacturing and trading clients, ensuring 99%+ system availability during critical financial periods. I led the design, development, and UAT of a custom Z-program to automate recurring journal entries and intercompany reconciliations, saving over 20 hours per month-end close.\n\n- I manage month-end and year-end closing activities—including balance carry-forward, FX revaluation, depreciation runs, and cost settlements—with 100% accuracy. I also enhance FI–MM/SD integration by improving automatic account determination, validation/substitution logic, and custom reporting, increasing process efficiency by 25%.\n\n- Additionally, I support internal and external audits with accurate financial data and documentation, and resolve complex FI/CO issues using ABAP runtime analysis and SQL trace, consistently meeting SLA requirements.",
-      "period": "September 2020 - Present"
+      "items": [
+        {
+          "company": "Shenzhen Xiaohetun Overseas Technology Co., Ltd.",
+          "position": "Full-stack Developer",
+          "website": "puffergo.com",
+          "websiteUrl": "https://puffergo.com/",
+          "description": "- Developed an image processing tool (compression, conversion, cropping) using Next.js, Sharp, and React-Advanced-Cropper, helping users optimize website assets more efficiently.\n\n- Built an AI-powered WordPress plugin (using PHP, JavaScript, and React) capable of generating complete websites from text prompts, reducing website build time from several hours to under 10 minutes in internal testing.\n\n- Applied prompt engineering to optimize system instructions, significantly improving AI output quality and token efficiency, thereby enhancing the website generator's performance and cost-effectiveness.\n\n- Created a visual editor for the plugin, enabling users to make fine adjustments to AI-generated layouts via manual tweaks or further AI instructions.\n\n- Designed the plugin's UI/UX using Tailwind CSS, SCSS, and ANT Design, delivering a clean and intuitive interface.\n\n- Contributed to the open-source Chrome extension Nanobrowser: built automated domain purchase workflows for Namesilo and Hostinger, reducing task execution steps by ~40% and lowering LLM token usage per workflow run.\n\n- Collaborated closely with backend developers to design and integrate APIs and data structures, ensuring smooth functionality between the frontend and backend systems.",
+          "period": "August 2025 - Present"
+        },
+        {
+          "company": "Hand Solution Indonesia",
+          "position": "SAP FICO Consultant",
+          "website": "www.hand-global.com",
+          "websiteUrl": "https://www.hand-global.com/",
+          "description": "- I provide production support for SAP ECC 6.0 FI–CO across large manufacturing and trading clients, ensuring 99%+ system availability during critical financial periods. I led the design, development, and UAT of a custom Z-program to automate recurring journal entries and intercompany reconciliations, saving over 20 hours per month-end close.\n\n- I manage month-end and year-end closing activities—including balance carry-forward, FX revaluation, depreciation runs, and cost settlements—with 100% accuracy. I also enhance FI–MM/SD integration by improving automatic account determination, validation/substitution logic, and custom reporting, increasing process efficiency by 25%.\n\n- Additionally, I support internal and external audits with accurate financial data and documentation, and resolve complex FI/CO issues using ABAP runtime analysis and SQL trace, consistently meeting SLA requirements.",
+          "period": "September 2024 - Present"
+        }
+      ]
     }
   },
   "data": {

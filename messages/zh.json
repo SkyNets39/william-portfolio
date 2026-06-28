@@ -65,11 +65,24 @@
     },
     "experience": {
       "title": "工作经历",
-      "company": "Hand Solution Indonesia",
-      "position": "SAP FICO顾问",
-      "website": "www.hand-global.com",
-      "description": "- 我为大型制造和贸易客户的SAP ECC 6.0 FI–CO提供生产支持，确保在关键财务期间系统可用性达到99%以上。我领导设计、开发和用户验收测试了一个自定义Z程序，用于自动化重复日记账分录和公司间对账，每月节省超过20小时的月末结算时间。\n\n- 我管理月末和年末结算活动——包括余额结转、外汇重估、折旧运行和成本结算——准确率达到100%。我还通过改进自动科目确定、验证/替换逻辑和自定义报告来增强FI–MM/SD集成，将流程效率提高25%。\n\n- 此外，我通过准确的财务数据和文档支持内部和外部审计，并使用ABAP运行时分析和SQL跟踪解决复杂的FI/CO问题，始终满足SLA要求。",
-      "period": "2020年9月 - 至今"
+      "items": [
+        {
+          "company": "深圳市小河豚海外科技有限公司",
+          "position": "全栈开发工程师",
+          "website": "puffergo.com",
+          "websiteUrl": "https://puffergo.com/",
+          "description": "- 使用 Next.js、Sharp 和 React-Advanced-Cropper 开发了一款图像处理工具（压缩、转换、裁剪），帮助用户更高效地优化网站素材。\n\n- 构建了一款 AI 驱动的 WordPress 插件（使用 PHP、JavaScript 和 React），能够根据文本提示生成完整的网站，在内部测试中将网站构建时间从数小时缩短至 10 分钟以内。\n\n- 运用提示词工程优化系统指令，显著提升了 AI 输出质量和 token 使用效率，从而增强了网站生成器的性能和成本效益。\n\n- 为插件创建了可视化编辑器，使用户能够通过手动调整或进一步的 AI 指令对 AI 生成的布局进行精细调整。\n\n- 使用 Tailwind CSS、SCSS 和 ANT Design 设计了插件的 UI/UX，提供简洁直观的界面。\n\n- 为开源 Chrome 扩展 Nanobrowser 做出贡献：构建了 Namesilo 和 Hostinger 的自动域名购买工作流，将任务执行步骤减少约 40%，并降低了每次工作流运行的 LLM token 使用量。\n\n- 与后端开发人员紧密协作，设计并集成 API 和数据结构，确保前后端系统之间的顺畅运行。",
+          "period": "2025年8月 - 至今"
+        },
+        {
+          "company": "Hand Solution Indonesia",
+          "position": "SAP FICO顾问",
+          "website": "www.hand-global.com",
+          "websiteUrl": "https://www.hand-global.com/",
+          "description": "- 我为大型制造和贸易客户的SAP ECC 6.0 FI–CO提供生产支持，确保在关键财务期间系统可用性达到99%以上。我领导设计、开发和用户验收测试了一个自定义Z程序，用于自动化重复日记账分录和公司间对账，每月节省超过20小时的月末结算时间。\n\n- 我管理月末和年末结算活动——包括余额结转、外汇重估、折旧运行和成本结算——准确率达到100%。我还通过改进自动科目确定、验证/替换逻辑和自定义报告来增强FI–MM/SD集成，将流程效率提高25%。\n\n- 此外，我通过准确的财务数据和文档支持内部和外部审计，并使用ABAP运行时分析和SQL跟踪解决复杂的FI/CO问题，始终满足SLA要求。",
+          "period": "2024年9月 - 至今"
+        }
+      ]
     }
   },
   "data": {

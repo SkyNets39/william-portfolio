@@ -12,6 +12,7 @@ const frameworks = [
   { id: 2, name: "ReactJS" },
   { id: 3, name: "Vite" },
   { id: 4, name: "NodeJS" },
+  { id: 5, name: "RAG" },
 ];
 
 const libraries = [
@@ -28,6 +29,7 @@ const libraries = [
   { id: 11, name: "Selenium" },
   { id: 12, name: "Scrapy" },
   { id: 13, name: "Tkinter" },
+  { id: 14, name: "Google Studio" },
 ];
 
 const databases = [
@@ -35,9 +37,10 @@ const databases = [
   { id: 2, name: "PostgreSQL" },
   { id: 3, name: "MySQL" },
   { id: 4, name: "Supabase" },
-  { id: 5, name: "Firebase" },
-  { id: 6, name: "Neon" },
-  { id: 7, name: "Prisma ORM" },
+  { id: 5, name: "Supabase Edge Function" },
+  { id: 6, name: "Firebase" },
+  { id: 7, name: "Neon" },
+  { id: 8, name: "Prisma ORM" },
 ];
 
 const tools = [
